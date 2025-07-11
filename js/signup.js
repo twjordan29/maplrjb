@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 let alertClass = 'alert-danger';
                 if (status === 201) {
                     alertClass = 'alert-success';
-                    signupForm.reset();
+                    // Redirect to login page after a short delay to allow the user to see the message
+                    setTimeout(() => {
+                        window.location.href = 'login.php';
+                    }, 2000); // 2-second delay
                 }
                 
                 const message = `<div class="alert ${alertClass} alert-dismissible fade show" role="alert">

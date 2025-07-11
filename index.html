@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maplr.ca - Find Your Next Canadian Career</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-maple-leaf maple-leaf"></i>
+                Maplr.ca
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.php">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#companies">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-outline-primary" href="login.html">Sign In</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="signup.html">Post a Job</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Find Your Next Canadian Career</h1>
+                    <p class="lead mb-4">Connect with Canadian employers who value local talent. Support the "Buy Canadian" movement while advancing your career.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <span class="badge bg-light text-dark fs-6 py-2 px-3">
+                            <i class="fas fa-flag-usa me-2"></i>Canadian First
+                        </span>
+                        <span class="badge bg-light text-dark fs-6 py-2 px-3">
+                            <i class="fas fa-handshake me-2"></i>Local Support
+                        </span>
+                        <span class="badge bg-light text-dark fs-6 py-2 px-3">
+                            <i class="fas fa-briefcase me-2"></i>Quality Jobs
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="search-box">
+                        <h3 class="text-dark mb-4">Start Your Job Search</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Job title or keyword" id="jobSearch">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control" id="locationSearch">
+                                        <option>Select Province</option>
+                                        <option>Ontario</option>
+                                        <option>British Columbia</option>
+                                        <option>Alberta</option>
+                                        <option>Quebec</option>
+                                        <option>Manitoba</option>
+                                        <option>Saskatchewan</option>
+                                        <option>Nova Scotia</option>
+                                        <option>New Brunswick</option>
+                                        <option>Newfoundland and Labrador</option>
+                                        <option>Prince Edward Island</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-search me-2"></i>Search Jobs
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Popular Job Categories</h2>
+                <p class="text-muted">Explore opportunities across Canada's thriving industries</p>
+            </div>
+            <div class="text-center">
+                <a href="#" class="category-pill">Technology</a>
+                <a href="#" class="category-pill">Healthcare</a>
+                <a href="#" class="category-pill">Finance</a>
+                <a href="#" class="category-pill">Manufacturing</a>
+                <a href="#" class="category-pill">Education</a>
+                <a href="#" class="category-pill">Construction</a>
+                <a href="#" class="category-pill">Marketing</a>
+                <a href="#" class="category-pill">Sales</a>
+                <a href="#" class="category-pill">Engineering</a>
+                <a href="#" class="category-pill">Remote Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section class="py-5 bg-light" id="jobs">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Canadian Jobs</h2>
+                <p class="text-muted">Hand-picked opportunities from top Canadian employers</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card job-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="company-logo">TM</div>
+                                <span class="job-badge">Featured</span>
+                            </div>
+                            <h5 class="card-title">Senior Software Developer</h5>
+                            <p class="text-muted mb-2">TechMaple Inc.</p>
+                            <p class="card-text">Join our growing team building innovative solutions for Canadian businesses. Remote work available.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-map-marker-alt me-1"></i>Toronto, ON
+                                </small>
+                                <small class="text-muted">
+                                    <i class="fas fa-dollar-sign me-1"></i>$80K - $120K
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card job-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="company-logo">CM</div>
+                                <span class="job-badge">New</span>
+                            </div>
+                            <h5 class="card-title">Marketing Manager</h5>
+                            <p class="text-muted mb-2">Canadian Manufacturing Co.</p>
+                            <p class="card-text">Lead marketing initiatives for Canada's premier manufacturing company. Great benefits package.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-map-marker-alt me-1"></i>Vancouver, BC
+                                </small>
+                                <small class="text-muted">
+                                    <i class="fas fa-dollar-sign me-1"></i>$65K - $85K
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card job-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="company-logo">NF</div>
+                                <span class="job-badge">Remote</span>
+                            </div>
+                            <h5 class="card-title">Financial Analyst</h5>
+                            <p class="text-muted mb-2">Northern Finance Group</p>
+                            <p class="card-text">Analyze financial data for Canadian businesses. Full remote position with quarterly team meetings.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-map-marker-alt me-1"></i>Calgary, AB
+                                </small>
+                                <small class="text-muted">
+                                    <i class="fas fa-dollar-sign me-1"></i>$55K - $75K
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="jobs.php" class="btn btn-outline-primary">View All Jobs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Choose Maplr.ca?</h2>
+                <p class="text-muted">The Canadian job board that puts local talent first</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card feature-card text-center">
+                        <div class="card-body p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-maple-leaf"></i>
+                            </div>
+                            <h5 class="card-title">Canadian First</h5>
+                            <p class="card-text">We prioritize Canadian employers and job seekers, supporting the "Buy Canadian" movement and local economic growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card feature-card text-center">
+                        <div class="card-body p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h5 class="card-title">Quality Connections</h5>
+                            <p class="card-text">We carefully vet employers to ensure they offer fair wages, good benefits, and positive work environments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card feature-card text-center">
+                        <div class="card-body p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5 class="card-title">Career Growth</h5>
+                            <p class="card-text">Access exclusive career resources, salary insights, and professional development opportunities tailored for Canadians.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-number" data-target="1250">0</div>
+                    <p class="text-muted">Active Jobs</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-number" data-target="450">0</div>
+                    <p class="text-muted">Canadian Companies</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-number" data-target="8500">0</div>
+                    <p class="text-muted">Job Seekers</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-number" data-target="95">0</div>
+                    <p class="text-muted">Success Rate %</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>
+                        <i class="fas fa-maple-leaf maple-leaf"></i>
+                        Maplr.ca
+                    </h5>
+                    <p>Canada's premier job board connecting local talent with Canadian employers. Supporting the "Buy Canadian" movement one job at a time.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Job Seekers</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="jobs.php">Browse Jobs</a></li>
+                        <li><a href="#">Create Profile</a></li>
+                        <li><a href="#">Career Resources</a></li>
+                        <li><a href="#">Salary Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Employers</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Employer Resources</a></li>
+                        <li><a href="#">Talent Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Maplr.ca. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Proudly Canadian <i class="fas fa-maple-leaf maple-leaf"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

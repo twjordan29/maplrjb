@@ -1,0 +1,902 @@
+:root {
+            --canada-red: #FF0000;
+            --canada-red-dark: #CC0000;
+            --maple-green: #228B22;
+            --maple-gold: #FFD700;
+            --text-dark: #2c3e50;
+            --light-gray: #f8f9fa;
+            --off-white: #f0f0f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            background-color: var(--off-white);
+            margin: 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: var(--canada-red) !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--canada-red) 0%, var(--canada-red-dark) 100%);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .toast-body {
+            background-color: var(--canada-red-dark);
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: var(--canada-red);
+            border-color: var(--canada-red);
+            border-radius: 8px;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--canada-red-dark);
+            border-color: var(--canada-red-dark);
+        }
+
+        .btn-outline-primary {
+            color: var(--canada-red);
+            border-color: var(--canada-red);
+            border-radius: 8px;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--canada-red);
+            border-color: var(--canada-red);
+        }
+
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--canada-red), var(--canada-red-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+        }
+
+        .job-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .job-card:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--canada-red);
+        }
+
+        .job-badge {
+            background: var(--maple-green);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .stats-section {
+            background: var(--light-gray);
+            padding: 60px 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--canada-red);
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer h5 {
+            color: var(--maple-gold);
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--maple-gold);
+        }
+
+        .maple-leaf {
+            color: var(--canada-red);
+            margin: 0 5px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+        }
+
+        .form-control:focus {
+            border-color: var(--canada-red);
+            box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+        }
+        
+        .form-select {
+            padding: 12px 15px;
+        }
+        
+        .ts-control {
+            padding: 12px 15px !important;
+        }
+        
+        .category-pill {
+            background: white;
+            border: 2px solid var(--canada-red);
+            color: var(--canada-red);
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .category-pill:hover {
+            background: var(--canada-red);
+            color: white;
+        }
+.card-header {
+    background-color: var(--canada-red);
+    color: white;
+    font-weight: bold;
+    border-bottom: 0;
+}
+
+.card-body {
+    padding: 2rem;
+}
+.auth-card {
+    border: 1px solid #e9ecef;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.job-filters-bar {
+    background-color: var(--canada-red);
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+}
+
+.search-inputs .input-group-text {
+    background-color: #fff;
+    border-right: 0;
+}
+
+.search-inputs .form-control {
+    border-left: 0;
+}
+
+.filter-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.job-listing-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    height: calc(100vh - 150px);
+    padding: 0 20px;
+}
+
+.job-listings-column, .job-detail-column {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.job-listings {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.job-card-listing {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.job-card-listing:hover, .job-card-listing.active {
+    background-color: var(--canada-red);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.job-card-listing:hover .text-muted, .job-card-listing.active .text-muted {
+    color: #f8f9fa !important;
+}
+
+.job-card-listing:hover .text-success, .job-card-listing.active .text-success {
+    color: #fff !important;
+}
+
+.company-logo-listing {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--canada-red);
+    font-size: 1.5rem;
+}
+.company-logo-listing img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.job-detail-view {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.job-detail-header-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.job-detail-content {
+    padding: 30px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.job-description p {
+    margin-bottom: 0;
+}
+
+.job-detail-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.company-logo-listing-lg {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+.company-logo-listing-lg img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+    justify-content: center;
+    font-weight: bold;
+    color: var(--canada-red);
+    font-size: 2rem;
+}
+
+/* Dashboard Styles */
+.dashboard-wrapper {
+    display: flex;
+}
+
+.dashboard-wrapper > .inbox-container {
+    flex-grow: 1;
+}
+
+.dashboard-sidebar {
+    width: 260px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.dashboard-sidebar .nav-link {
+    color: #555;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dashboard-sidebar .nav-link:hover,
+.dashboard-sidebar .nav-link.active {
+    background-color: var(--canada-red);
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.dashboard-sidebar .nav-link i {
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+}
+
+.dashboard-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f8f9fa;
+    overflow-y: auto; /* Allow content to scroll */
+}
+
+.dashboard-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    padding: 25px;
+    height: 100%;
+}
+
+.dashboard-card .card-title {
+    font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+    .tips-card {
+        display: none;
+    }
+    .job-listing-page {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 0;
+        gap: 0;
+    }
+
+    .job-detail-column {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .job-listings-column.hidden {
+        display: none;
+    }
+
+    .job-detail-column.visible {
+        display: block;
+    }
+    
+    .job-filters-bar {
+        padding: 15px;
+    }
+
+    .job-detail-view {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+.image-upload-wrapper {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.header-upload-wrapper {
+    aspect-ratio: 1 / 1;
+}
+
+.image-upload-wrapper:hover {
+    border-color: var(--canada-red);
+    background-color: #e9ecef;
+}
+
+.image-upload-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #6c757d;
+}
+
+.image-upload-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-placeholder i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.tips-card {
+    position: sticky;
+    top: 20px;
+}
+
+.tips-card .card-title {
+    color: var(--canada-red);
+}
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    border-radius: 0.2rem;
+    margin-right: 5px;
+}
+
+.table .badge {
+    font-size: 0.9em;
+    padding: 0.5em 0.75em;
+}
+
+.card-header h4 {
+    color: white;
+}
+
+/* General Card Styles from original stylesheet */
+.card {
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+}
+
+.card-header {
+    background-color: var(--canada-red-dark);
+    color: white;
+    font-weight: bold;
+    border-bottom: 0;
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1030;
+    background-color: var(--canada-red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar-toggle {
+        display: block;
+    }
+
+    .dashboard-sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        height: 100%;
+        z-index: 1020;
+        transition: left 0.3s ease;
+    }
+
+    .dashboard-sidebar.show {
+        left: 0;
+    }
+
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+    
+    .dashboard-content {
+        padding-top: 70px;
+    }
+}
+.dashboard-sidebar hr {
+    margin: 1rem 0;
+    border-color: rgba(0,0,0,0.1);
+}
+.pagination .page-item .page-link {
+    color: var(--canada-red);
+    border-radius: 5px;
+    margin: 0 2px;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--canada-red);
+    border-color: var(--canada-red);
+    color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+}
+
+.pagination .page-item:not(.active) .page-link:hover {
+    background-color: #f8f9fa;
+}
+.filter-pill {
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    color: #495057;
+}
+
+.filter-pill:hover {
+    background-color: #e9ecef;
+}
+
+.job-filters-bar .btn-light {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--canada-red);
+}
+
+.job-filters-bar .input-group-text {
+    background-color: #fff;
+    border-right: 0;
+}
+
+.job-filters-bar .form-control {
+    border-left: 0;
+}
+.chart-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}
+.job-card-listing.active .maple-leaf {
+    color: #fff;
+}
+.verified-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    margin-left: 0.25em;
+}
+.company-profile-header {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.company-profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.company-profile-header .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.company-profile-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--canada-red);
+    font-size: 4rem;
+    background-color: var(--light-gray);
+}
+
+.company-profile-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.company-profile-link {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.company-profile-link:hover {
+    text-decoration: underline;
+}
+/* Custom Modal Styles */
+.modal-content {
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--canada-red);
+    color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 1rem 2rem;
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+/* My Applications Page Styles */
+.application-list-item {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.application-list-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+.application-list-item h5 {
+    font-weight: 600;
+    color: var(--canada-red);
+}
+
+.application-list-item .badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.9em;
+}
+.suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+
+.suggestion-item .suggestion-type {
+    font-size: 0.8em;
+    color: #888;
+}
+/* Modern Tab Styles */
+.modern-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.modern-tabs .nav-item {
+    margin-bottom: -2px;
+}
+
+.modern-tabs .nav-link {
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #6c757d;
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.modern-tabs .nav-link:hover {
+    border-bottom-color: #adb5bd;
+    color: #495057;
+}
+
+.modern-tabs .nav-link.active {
+    border-bottom-color: var(--canada-red);
+    color: var(--canada-red);
+    background-color: transparent;
+}
+
+.tab-content > .tab-pane {
+    padding: 1.5rem 0;
+}
+
+.card-tab-content {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: none;
+    border: 1px solid #dee2e6;
+}
+.review {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.review .employer-response {
+    border-left: 3px solid var(--canada-red);
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+#reviews-pagination .page-link {
+    color: var(--canada-red);
+}
+
+#reviews-pagination .page-item.active .page-link {
+    background-color: var(--canada-red);
+    border-color: var(--canada-red);
+    color: #fff;
+}
+.bg-maplr-red {
+    background-color: var(--canada-red) !important;
+}
+
+.bg-maplr-red-dark {
+    background-color: var(--canada-red-dark) !important;
+}
+
+.candidate-fallback-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    color: var(--canada-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.links-involved a {
+    color: var(--canada-red);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.links-involved a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--canada-red);
+    transition: width 0.3s ease;
+}
+
+.links-involved a:hover {
+    color: var(--canada-red);
+}
+
+.links-involved a:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+Array
+(
+    [title] => Test Job
+    [job_type] => full_time
+    [salary_type] => salary
+    [annual_salary_min] => 10000
+    [annual_salary_max] => 121000
+    [location] => 21 Hardy Ave
+    [city] => Grand Falls-Windsor
+    [province] => Newfoundland and Labrador
+    [expires_at] => 2025-07-12
+    [recurrence_interval] => weekly
+    [description] => <p>sad</p>
+)

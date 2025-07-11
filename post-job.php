@@ -143,8 +143,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'employer') {
                                             <i class="fas fa-plus me-1"></i> Add Question
                                         </button>
                                     </div>
-                                    <button type="submit" form="postJobForm" class="btn btn-primary mt-3">Post Job</button>
                                 <?php endif; ?>
+                                <button type="submit" form="postJobForm" class="btn btn-primary mt-3">Post Job</button>
                             </div> <!-- end card-body -->
                         </div> <!-- end card -->
                     </div> <!-- end col-lg-8 -->

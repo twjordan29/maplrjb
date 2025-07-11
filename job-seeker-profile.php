@@ -139,6 +139,9 @@ $user = $user_obj->getById($_SESSION['user_id']);
             </div>
         </main>
     </div>
+
+    <?php include 'includes/footer.php'; ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="js/job-seeker-profile.js"></script>
 </body>

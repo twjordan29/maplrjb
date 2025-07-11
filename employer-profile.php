@@ -191,6 +191,8 @@ $isPremium = ($profileData['plan_type'] ?? 'free') === 'premium' || ($profileDat
         </main>
     </div>
 
+    <?php include 'includes/footer.php'; ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="js/employer-profile.js"></script>
     <script src="js/dashboard.js"></script>

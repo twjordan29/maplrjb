@@ -48,6 +48,8 @@ $db = (new Database())->getConnection();
         </div>
     </div>
 
+    <?php include 'includes/footer.php'; ?>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             fetch('api/get_job_analytics.php')

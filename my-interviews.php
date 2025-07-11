@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'job_seeker') {
-    header("Location: login.html");
+    header("Location: login.php");
     exit();
 }
 ?>

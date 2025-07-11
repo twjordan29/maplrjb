@@ -6,7 +6,7 @@ require_once 'php/User.php';
 
 // If the user is not logged in, redirect them.
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.html');
+    header('Location: login.php');
     exit();
 }
 

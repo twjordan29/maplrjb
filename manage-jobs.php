@@ -6,7 +6,7 @@ require_once 'php/Jobs.php';
 
 // If the user is not logged in or is not an employer, redirect them.
 if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'employer') {
-    header('Location: login.html');
+    header('Location: login.php');
     exit();
 }
 

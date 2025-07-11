@@ -4,7 +4,7 @@ require_once 'php/Database.php';
 require_once 'php/User.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'job_seeker') {
-    header('Location: login.html');
+    header('Location: login.php');
     exit();
 }
 

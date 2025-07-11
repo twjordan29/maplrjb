@@ -4,7 +4,7 @@ session_start();
 // Check if the user is logged in and is a job seeker
 if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'job_seeker') {
     // Redirect to login page or an error page
-    header('Location: login.html');
+    header('Location: login.php');
     exit;
 }
 ?>

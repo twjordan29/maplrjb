@@ -37,10 +37,10 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="btn btn-outline-primary" href="login.html">Sign In</a>
+                        <a class="btn btn-outline-primary" href="login.php">Sign In</a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="btn btn-primary" href="signup.html">Post a Job</a>
+                        <a class="btn btn-primary" href="signup.php">Post a Job</a>
                     </li>
                 </ul>
             </div>

@@ -44,10 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column">
                             <div class="text-center">
-                                ${candidate.profile_picture
-                                    ? `<img src="uploads/profiles/${candidate.profile_picture}" alt="${candidate.first_name}" class="rounded-circle mb-3 mx-auto d-block" width="80" height="80">`
-                                    : `<div class="candidate-fallback-image mb-3 mx-auto">${(candidate.first_name || '').charAt(0)}${(candidate.last_name || '').charAt(0)}</div>`
-                                }
+                                <div class="profile-avatar mx-auto">
+                                    ${candidate.profile_picture
+                                        ? `<img src="${candidate.profile_picture}" alt="${candidate.first_name}">`
+                                        : `<span>${(candidate.first_name || '').charAt(0)}${(candidate.last_name || '').charAt(0)}</span>`
+                                    }
+                                </div>
                             </div>
                             <div class="text-center">
                                 <h5 class="card-title">${candidate.first_name} ${candidate.last_name}</h5>

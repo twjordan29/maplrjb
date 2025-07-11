@@ -7,6 +7,22 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'job_seeker') {
     header('Location: login.php');
     exit;
 }
+require_once 'php/Database.php';
+require_once 'php/User.php';
+
+$database = new Database();
+$db = $database->getConnection();
+$user = new User($db);
+
+$profileData = $user->getById($_SESSION['user_id']);
+
+$initials = '';
+if (!empty($profileData['first_name'])) {
+    $initials .= strtoupper(substr($profileData['first_name'], 0, 1));
+}
+if (!empty($profileData['last_name'])) {
+    $initials .= strtoupper(substr($profileData['last_name'], 0, 1));
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +40,16 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'job_seeker') {
     <div class="dashboard-wrapper">
         <?php include 'includes/sidebar.php'; ?>
         <div class="dashboard-content">
-            <h1>My Profile</h1>
+            <div class="d-flex align-items-center mb-4">
+                <div class="profile-avatar">
+                    <?php if (!empty($profileData['profile_picture'])): ?>
+                        <img src="<?php echo htmlspecialchars($profileData['profile_picture']); ?>" alt="Profile Picture">
+                    <?php else: ?>
+                        <span><?php echo htmlspecialchars($initials); ?></span>
+                    <?php endif; ?>
+                </div>
+                <h1 class="ms-4">My Profile</h1>
+            </div>
             <p>Keep your profile up to date to attract the best employers.</p>
 
             <form id="profile-form">
